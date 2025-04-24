@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siargao Moto Rentals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+    }
+    .bike-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .bike-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .bike-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 0.7rem 2rem;
+      border: none;
+      background: #2c3e50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Siargao Motor Rentals</h1>
+    <p>Explore the island on two wheels – Easy, Fast, and Affordable!</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#bikes">Our Bikes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Located in the heart of Siargao Island, we offer top-quality motorbike rentals for travelers who want to explore the island’s beauty at their own pace. Whether you're chasing waves or scenic views, we've got the perfect ride for you!</p>
+  </section>
+
+  <section id="bikes">
+    <h2>Our Motorbikes</h2>
+    <div class="bike-grid">
+      <div class="bike-card">
+        <img src="images/img.jpg" alt="Yamaha Mio" />
+        <h3>Yamaha Mio</h3>
+        <p>400 / day</p>
+      </div>
+      <div class="bike-card">
+        <img src="images/img2.jpg" alt="Honda Beat" />
+        <h3>Honda Beat</h3>
+        <p>₱400 / day</p>
+      </div>
+      <div class="bike-card">
+        <img src="images/img3.jpg" alt="XRM 125" />
+        <h3>Honda XRM 125</h3>
+        <p>₱350 / day</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>📍 General Luna, Siargao Island</p>
+    <p>📞 0912-345-6789</p>
+    <p>📧 siargaomotorentals@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Siargao Moto Rentals</p>
+  </footer>
+
+</body>
+</html>
