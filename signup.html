@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Sign Up | Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+  <!-- Main Content -->
+  <section id="main" class="wrapper style2 fade-up">
+    <div class="inner">
+      <h2>Sign Up</h2>
+      <p>Create your account to continue to the portfolio.</p>
+      <form id="signup-form" method="post" action="#">
+        <div class="fields">
+            <div class="field">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+          </div>
+          <ul class="actions">
+            <li><a href="index.html" class="button">Sign Up</a></li>
+          </ul>
+          
+      </form>
+    </div>
+  </section>
+
+  <!-- Redirect Script -->
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent actual form submission
+      alert("Signed up successfully!");
+      window.location.href = "index.html"; // Redirect to homepage
+    });
+  </script>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
